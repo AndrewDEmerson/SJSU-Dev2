@@ -68,8 +68,8 @@ TEST_CASE("Testing lpc40xx I2C")
     constexpr float kSystemFrequency =
         kDummySystemControllerClockFrequency.to<uint32_t>();
 
-    constexpr float kScll = ((kSystemFrequency / 75'000.0f) / 2.0f) * 0.7f;
-    constexpr float kSclh = ((kSystemFrequency / 75'000.0f) / 2.0f) * 1.3f;
+    constexpr float kScll = ((kSystemFrequency / 100'000.0f) / 2.0f) * 0.7f;
+    constexpr float kSclh = ((kSystemFrequency / 100'000.0f) / 2.0f) * 1.3f;
 
     constexpr uint32_t kLow  = static_cast<uint32_t>(kScll);
     constexpr uint32_t kHigh = static_cast<uint32_t>(kSclh);
